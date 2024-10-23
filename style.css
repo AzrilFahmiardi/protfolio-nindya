@@ -1,0 +1,309 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(24,24,24);
+}
+
+.profile {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 200px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+
+
+}
+
+.profile-pict {
+    min-width: 300px;
+    background-image: url(./assets/nindya2.jpg);
+    background-size: cover;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.profile-desc {
+    min-width: 900px;
+    height: 300px;
+    background-image: url(./assets/background.png);
+    background-size: cover;
+    border-radius: 20px;
+    font-family: "League Spartan", sans-serif;
+    padding: 50px 30px 20px
+;
+}
+
+.profile-desc h1 {
+    font-size: 3em;
+    color: white;
+    margin-bottom: 20px;
+
+}
+
+.profile-desc p {
+    color: white;
+    letter-spacing: 0.1em;
+}
+
+.profile-desc .profile-button {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid red; */
+    justify-content: space-between;
+    position: relative;
+}
+
+.profile-button .downlaod-cv {
+    width: 180px;
+    height: 35px;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    margin-left: 30px;
+    font-family: "League Spartan", sans-serif;
+    color: #A4133C;
+    font-weight: bolder;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+.profile-button .downlaod-cv:hover {
+    background-color:#A4133C ;
+    color: white;
+}
+
+.profile-button .social-media {
+    position: absolute;
+    right: 20px;
+    bottom: -20px;
+    /* border: 1px blue solid; */
+
+}
+
+.social-media .sosmed {
+    width: 40px;
+    height: 40px;
+    margin-left: 7px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10px;
+
+}
+
+.linkedin:hover,.instagram:hover,.github:hover {
+    transform: scale(1.1);
+}
+
+.social-media .linkedin {
+    background-image: url(./assets/linkedinBW.png);
+    transition: all 0.2 ease-in-out;
+
+}
+
+.social-media .instagram {
+    background-image: url(./assets/instagramBW.png);
+    transition: all 0.2 ease-in-out;
+
+}
+.social-media .github {
+    background-image: url(./assets/github.png);
+    transition: all 0.2 ease-in-out;
+    background-size: 80%;
+
+
+}
+
+.main-information {
+    width: 75%;
+    height: 230px;
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 120px
+}
+
+.card-box {
+    width: 320px;
+    height: 210px;
+    /* background-color: rgba(255,179,193,0.43); */
+    border: 2px solid rgba(255,179,193,0.43) ;
+    border-radius: 20px;
+    padding: 20px 35px 7px;
+    font-family: "League Spartan", sans-serif;
+    position: relative;
+
+    transition: all 0.2s ease;
+
+}
+
+.card-box:hover {
+    background-color: rgba(255,179,193,0.43);
+
+
+}
+
+.card-box .logo {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    margin-bottom: 25px;
+
+}
+
+.about-me .logo{
+    background-image: url(./assets/woman.png);
+}
+.project .logo{
+    background-image: url(./assets/project.png);
+}
+.certificate .logo{
+    background-image: url(./assets/certificate.png);
+}
+.skills .logo{
+    background-image: url(./assets/skills.png);
+}
+
+.card-box h2 {
+    color: white;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-weight: bolder;
+
+}
+
+.card-box p {
+    color: white;
+    font-weight: 300;
+}
+
+.card-box a {
+    color: white;
+    text-decoration: none;
+    font-weight: lighter;
+    margin-right: 10px;
+}
+
+.view-more {
+    position: absolute;
+    bottom: 10px;
+    width: 140px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 10px;
+    border-radius: 20px;
+
+    transition: all 0.1s ease;
+
+}
+
+.view-more:hover {
+    background-color: #A4133C;
+}
+
+
+
+.view-more button {
+    width: 30px;
+    height: 30px;
+    background-color: #A4133C;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background-image: url(./assets/next2.png);
+    background-size: cover;
+}
+
+.add-information {
+    width: 70%;
+    height: 500px;
+    margin: 250px auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+
+.message-form {
+    width: 800px;
+    height: 450px;
+    background-color: #FF4D6D;
+    border-radius: 20px;
+}
+
+.message-form-submit {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 10px;
+}
+
+.message-form-submit input[type="text"] {
+    height: 50px;
+    padding: 0 30px;
+    border-radius: 10px;
+    border: none;
+    font-family: "League Spartan", sans-serif;
+
+}
+
+.message-form-submit textarea {
+    height: 270px;
+    padding: 30px 30px 0;
+    border-radius: 10px;
+    border: none;
+    font-family: "League Spartan", sans-serif;
+
+
+}
+
+.message-form-submit input[type="submit"] {
+    height: 60px;
+    padding: 0 30px;
+    border-radius: 10px;
+    border: none;
+    font-family: "League Spartan", sans-serif;
+    font-size: 1em;
+    background-color: #b34d60;
+    color: white;
+    cursor: pointer;
+    
+}
+
+.message-form-submit input[type="submit"]:hover {
+    background-color: white;
+    color: #A4133C  ;
+}
+
+
+
+#map {
+    width: 500px;
+    height: 450px;
+    background-color: white;
+    border-radius: 20px;
+
+}
+

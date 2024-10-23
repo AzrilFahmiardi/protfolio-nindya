@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="profile">
+        <div class="profile-pict"></div>
+        <div class="profile-desc">
+            <h1 class="profile-name">Anindya Nailah Suryawan</h1>
+            <p class="profile-name-desc">Software Engineering Student</p>
+            <p class="profile-name-desc">Universitas Gadjah Mada</p>
+            <p class="profile-name-desc">2024</p>
+            <div class="profile-button">
+                <button class="downlaod-cv">Download CV</button>
+                <div class="social-media">
+                    <button class="linkedin sosmed"><a href=""></a></button>
+                    <button class="instagram sosmed"><a href=""></a></button>
+                    <button class="github sosmed"><a href=""></a></button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="main-information">
+        <div class="about-me card-box" data-aos="fade-up" data-aos-duration="1000">
+            <div class="logo"></div>
+            <h2>About Me</h2>
+            <p>lets get in touch with me and lets work together!</p>
+            <div class="view-more">
+                <a href="">VIEW MORE</a>
+                <button></button>
+            </div>
+        </div>
+        <div class="project card-box" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+            <div class="logo"></div>
+            <h2>Project</h2>
+            <p>take a look at the project I made</p>
+            <div class="view-more">
+                <a href="">VIEW MORE</a>
+                <button></button>
+            </div>
+        </div>
+        <div class="certificate card-box" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+            <div class="logo"></div>
+            <h2>Certificate</h2>
+            <p>The certificate I got</p>
+            <div class="view-more">
+                <a href="">VIEW MORE</a>
+                <button></button>
+            </div>
+        </div>
+        <div class="skills card-box" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+            <div class="logo"></div>
+            <h2>Skills</h2>
+            <p>i learn a lot of programming skill</p>
+            <div class="view-more">
+                <a href="">VIEW MORE</a>
+                <button></button>
+            </div>
+        </div>
+    </div>
+    <div class="add-information">
+        <div class="message-form" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
+            <form action="" class="message-form-submit">
+                <input type="text" placeholder="name">
+                <textarea name="" id="" placeholder="message"></textarea >
+                <input type="submit">
+            </form>
+        </div>
+        <div id="map" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000"></div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+      <script>
+        var map = L.map('map').setView([-7.76310589085833, 110.39304612568044], 18);
+
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(map);
+
+        var marker = L.marker([-7.76310589085833, 110.39304612568044]).addTo(map);
+
+        marker.bindPopup("<b>Its Gacoan</b><br>Gacaon Gejayan, saya sering kesini.").openPopup(); 
+
+
+    </script>
+
+    
+</body>
+</html>
